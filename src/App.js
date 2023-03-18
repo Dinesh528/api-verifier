@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import AutoVerifier from './components/AutoVerifier';
+import ManualVerifier from './components/ManualVerifier';
+import Videos from './components/Videos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <AutoVerifier/>
+      <ManualVerifier/>
+      <Videos/>
     </div>
   );
 }
